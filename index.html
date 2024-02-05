@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Translator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Simple Translator App</h1>
+  <img src="translator-man.png" alt="" height="300px">
+  <div>
+  <input type="text" id="input-text" placeholder="Type your text here">
+    <select id="input-language">
+      <option value="malay">Malay</option>
+      <option value="english">English</option>
+    </select>
+  </div>
+  <div>
+  <input type="text" id="output-text" placeholder="Translation" readonly>
+    <select id="output-language">
+      <option value="malay">Malay</option>
+      <option value="english">English</option>
+    </select>
+  </div>
+  <button id="translate-button" onclick="translateText()">Translate</button>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
